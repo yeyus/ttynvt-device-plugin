@@ -25,7 +25,7 @@ func printInstanceInfo(c chan os.Signal, manager *ttynvt.TTYNVTManager) {
 func printVersion() {
 	versionStrings := [...]string{
 		"ttyNVT device plugin for Kubernetes",
-		fmt.Sprintln("Jesus Trujillo <elyeyus@gmail.com>"),
+		fmt.Sprint("Jesus Trujillo <elyeyus@gmail.com>"),
 		fmt.Sprintf("%s version %s", os.Args[0], gitDescribe),
 	}
 
