@@ -37,7 +37,7 @@ func printVersion() {
 func main() {
 	printVersion()
 	manager := ttynvt.NewTTYNVTManager(MAX_INSTANCES)
-	for i := 0; i < MAX_INSTANCES; i++ {
+	for i := 0; i < 1; i++ {
 		err := manager.Create(fmt.Sprintf("127.0.0.%d", i))
 		if err != nil {
 			klog.Error(err)
